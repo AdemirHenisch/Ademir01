@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Adicionar um ouvinte de evento a um botão ou controle para ativar/desativar
-const botaoAltoContraste = document.getElementById('botaoAltoContraste'); // Certifique-se de ter um elemento com este ID
+const botaoAltoContraste = document.getElementById('meuBotao'); // Certifique-se de ter um elemento com este ID
 if (botaoAltoContraste) {
   botaoAltoContraste.addEventListener('click', toggleAltoContraste);
 }
