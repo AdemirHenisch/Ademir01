@@ -22,10 +22,3 @@ document.addEventListener('DOMContentLoaded', function () {
     })
     //Código fonte seguinte ocultado no slide
 })
-document.addEventListener('DOMContentLoaded', function () {
-const botao = document.getElementById('meuBotao');
-
-  botao.addEventListener('click', function() {
-    botao.classList.toggle('botao-alto-contraste');
-    alert('Botão de alto contraste clicado!');
-  })
