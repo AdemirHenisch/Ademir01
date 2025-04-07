@@ -166,39 +166,31 @@ h2 {
 
 .botao-alto-contraste {
   background-color: black;
-  color: white;
-  border: 2px solid black; /* Borda inicial para garantir contraste mesmo sem hover/foco */
-  padding: 10px 20px;
+  color: yellow;
+  border: 3px solid yellow; /* Borda amarela forte */
+  padding: 12px 24px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: bold; /* Texto em negrito para maior destaque */
   cursor: pointer;
-  transition: border-color 0.3s ease; /* Transição suave para o efeito de hover/foco */
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
-.botao-alto-contraste:hover,
+.botao-alto-contraste:hover {
+  background-color: yellow;
+  color: black;
+  border-color: black;
+}
+
 .botao-alto-contraste:focus {
-  border-color: yellow; /* Cor da borda em hover e foco */
-  outline: none; /* Remove a borda de foco padrão do navegador para substituí-la pela nossa */
+  outline: none; /* Remove a borda de foco padrão */
+  border-color: lime; /* Cor de foco ainda mais distinta */
+  box-shadow: 0 0 5px lime; /* Adiciona uma sombra para o foco */
 }
 
 .botao-alto-contraste:active {
-  background-color: #333; /* Cor ligeiramente mais escura ao clicar */
-}
-
-@media (prefers-contrast: more) {
-  .botao-padrao {
-    background-color: black;
-    color: white;
-    border-color: white;
-  }
-}
-
-@media (prefers-contrast: less) {
-  .botao-padrao {
-    background-color: lightgray;
-    color: black;
-    border-color: gray;
-  }
+  background-color: #cccc00; /* Amarelo ligeiramente mais escuro ao clicar */
+  color: black;
 }
