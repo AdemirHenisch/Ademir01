@@ -22,3 +22,27 @@ document.addEventListener('DOMContentLoaded', function () {
     })
     //Código fonte seguinte ocultado no slide
 })
+
+
+function toggleAltoContraste() {
+  const body = document.body;
+  body.classList.toggle('alto-contraste');
+
+  // Opcional: Salvar a preferência do usuário no armazenamento local
+  const altoContrasteAtivo = body.classList.contains('alto-contraste');
+  localStorage.setItem('altoContraste', altoContrasteAtivo);
+}
+
+// Verificar a preferência do usuário ao carregar a página
+document.addEventListener('DOMContentLoaded', function() {
+  const altoContrasteSalvo = localStorage.getItem('altoContraste');
+  if (altoContrasteSalvo === 'true') {
+    document.body.classList.add('alto-contraste');
+  }
+});
+
+// Adicionar um ouvinte de evento a um botão ou controle para ativar/desativar
+const botaoAltoContraste = document.getElementById('botaoAltoContraste'); // Certifique-se de ter um elemento com este ID
+if (botaoAltoContraste) {
+  botaoAltoContraste.addEventListener('click', toggleAltoContraste);
+}
