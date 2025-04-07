@@ -201,3 +201,48 @@ h2 {
     border-color: gray;
   }
 }
+
+body.alto-contraste {
+  background-color: black !important; /* !important para garantir a prioridade */
+  color: white !important;
+}
+
+body.alto-contraste a {
+  color: yellow !important;
+}
+
+body.alto-contraste a:hover,
+body.alto-contraste a:focus {
+  color: lime !important;
+}
+
+/* Adicione estilos de alto contraste para outros elementos conforme necessário */
+body.alto-contraste h1,
+body.alto-contraste h2,
+body.alto-contraste h3,
+body.alto-contraste p,
+body.alto-contraste div,
+body.alto-contraste span,
+body.alto-contraste li,
+body.alto-contraste button,
+body.alto-contraste input {
+  border-color: white !important;
+}
+
+body.alto-contraste button {
+  background-color: #333 !important;
+  color: white !important;
+}
+
+body.alto-contraste input[type="text"],
+body.alto-contraste input[type="email"],
+body.alto-contraste textarea {
+  background-color: #222 !important;
+  color: white !important;
+}
+
+/* Estilos para o indicador de foco em alto contraste */
+body.alto-contraste *:focus {
+  outline: 2px solid lime !important;
+  outline-offset: 2px !important;
+}
