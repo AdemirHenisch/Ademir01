@@ -28,5 +28,4 @@ const botao = document.getElementById('meuBotao');
   botao.addEventListener('click', function() {
     botao.classList.toggle('botao-alto-contraste');
     alert('Botão de alto contraste clicado!');
-  });
-}
+  })
