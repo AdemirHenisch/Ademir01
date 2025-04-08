@@ -246,3 +246,8 @@ body.alto-contraste *:focus {
   outline: 2px solid lime !important;
   outline-offset: 2px !important;
 }
+
+header.alto-contraste {
+  background-color: black !important; /* !important para garantir a prioridade */
+  color: white !important;
+}
