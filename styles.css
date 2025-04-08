@@ -251,3 +251,18 @@ body.alto-contraste header {
   background-color: black !important; /* !important para garantir a prioridade */
   color: white !important;
 }
+
+.alto-contraste .botao-inicio, .alto-contraste .formulario button, .alto-contraste .btn-primary{
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo)
+}
+.alto-contraste #tropicalia {
+    background: none;
+}
+.alto-contraste #galeria {
+    background-color: var(--alto-contraste-fundo);
+}
+.alto-contraste .fundo-galeria {
+    background: none;
+}
+
